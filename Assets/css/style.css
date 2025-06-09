@@ -82,22 +82,15 @@ a{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 
-.header_list-links-dropdown{
+.header_list-links_dropdown{
     display: none;
 }
 
-.header_list-links-equipes:hover ul.header_list-links-dropdown{
-    display: block;
-}
-
-.header_list-links-dropdown2{
-    display: none;
-}
-
-.header_list-links-equipes-filles:hover ul.header_list-links-dropdown2{
+.header_list-links_cabinet:hover ul.header_list-links_dropdown{
     display: block;
 }
 
@@ -108,7 +101,7 @@ header {
     padding: 3rem 2rem;
     background-color: none;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 a:hover{
@@ -117,7 +110,7 @@ a:hover{
 }
 
 .header_logo{
-    width: 5rem;
+    width: 15rem;
 }
 
 nav ul {
@@ -160,7 +153,7 @@ nav ul li a {
         right: -100%;
         width: 50%;
         height: 100vh;
-        background-color: #f0590d;
+        background-color:rgb(158, 210, 79);
         transition: right 0.3s ease;
         font-size: 1.5rem;
     }
