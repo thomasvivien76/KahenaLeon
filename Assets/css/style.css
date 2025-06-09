@@ -1,4 +1,4 @@
-/*nav barre*/
+/*nav barre
 header{
     background-color: rgb(156, 202, 87);
 
@@ -27,4 +27,158 @@ a{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(120, 97, 210);
 
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.close-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100vh;
+        background-color: #f0590d;
+        transition: right 0.3s ease;
+        font-size: 1.5rem;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+
+    nav ul li {
+        margin: 1rem 1rem;
+    }
+
+    .close-toggle {
+        display: block;
+    }
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header_list-links-dropdown{
+    display: none;
+}
+
+.header_list-links-equipes:hover ul.header_list-links-dropdown{
+    display: block;
+}
+
+.header_list-links-dropdown2{
+    display: none;
+}
+
+.header_list-links-equipes-filles:hover ul.header_list-links-dropdown2{
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+    background-color: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+a:hover{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.header_logo{
+    width: 5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.close-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100vh;
+        background-color: #f0590d;
+        transition: right 0.3s ease;
+        font-size: 1.5rem;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+
+    nav ul li {
+        margin: 1rem 1rem;
+    }
+
+    .close-toggle {
+        display: block;
+    }
 }
