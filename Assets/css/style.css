@@ -119,10 +119,12 @@ nav ul {
     display: flex;
     list-style: none;
     flex-direction: column;
+    background-color: rgb(121, 176, 238);
+    padding: 0.3rem 1rem 5rem 1rem;
 }
 
 nav ul li {
-    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 nav ul li a {
@@ -179,17 +181,46 @@ nav ul li a {
     }
 }
 
+p{
+    text-align: justify;
+}
 .body{
     display: flex;
-    flex-direction: row;
 }
 
+.center-right{
+    display: flex;
+}
 .left{
-    padding: 1rem 1% 1rem 11%;
+    margin: 1rem 1% 1rem 11%;
+    width: 20%;
 }
 
 .center{
     display: flex;
     flex-direction: column;
-    padding: 1rem 33% 1rem 1%;
+    margin: 1rem 2% 1rem 2%;
+    width: 40%;
+
+}
+
+.right{
+    display: flex;
+    margin: 1rem 11% 1rem 2%;
+    width: 20%;
+    background-color: rgb(198, 195, 195);
+}
+
+ul{
+    list-style-type: none;
+}
+
+@media (max-width: 1000px) {
+    .center-right{
+        display: flex;
+        flex-direction: column;
+    }
+    .right{
+        width: 40%;
+    }
 }
