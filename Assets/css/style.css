@@ -102,11 +102,13 @@ header {
     background-color: none;
     color: black;
     font-size: 1rem;
+
 }
 
 a:hover{
     font-weight: bold;
     font-style: italic;
+    font-size: 1.3rem;
 }
 
 .header_logo{
@@ -116,6 +118,7 @@ a:hover{
 nav ul {
     display: flex;
     list-style: none;
+    flex-direction: column;
 }
 
 nav ul li {
@@ -174,4 +177,19 @@ nav ul li a {
     .close-toggle {
         display: block;
     }
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    padding: 1rem 1% 1rem 11%;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 33% 1rem 1%;
 }
